@@ -120,6 +120,10 @@ body {
   color: #2e2f42;
 }
 
+.list_contacts {
+  color: #2e2f42; /* edits after dz4 */
+}
+
 .ref {
   font-weight: 500;
   font-size: 16px;
@@ -135,16 +139,6 @@ body {
 .ref::before {
 }
 
-/* .ref::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-} */
 .current {
   position: relative;
   color: #404bbf;
