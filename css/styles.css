@@ -403,11 +403,12 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* portfolio_content_img:hover .portfolio_hover_text 
-  transform: translateY(
-    0%
-  ); /* оверлей прт ховері на картинку, а потрібно  на  весь блок */
-*/ .portfolio_list_item:hover .portfolio_hover_text {
+/* portfolio_content_img:hover .portfolio_hover_text {
+  transform: translateY(0%);
+} */
+/* оверлей прт ховері на картинку, а потрібно  на  весь блок */
+
+.portfolio_list_item:hover .portfolio_hover_text {
   transform: translateY(0%); /* оверлей прт ховері на  весь блок */
 }
 
