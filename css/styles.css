@@ -27,6 +27,20 @@ ol {
   padding-left: 0;
 }
 
+/* Кнопка не успадковує багато стилів оформлення тексту LR5 */
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+input {
+  font-family: inherit;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 /* Зробити зображення блочними елементами */
 img {
   display: block;
