@@ -395,6 +395,7 @@
         </div>
       </section>
     </main>
+    <!--Footer-->
     <footer class="foooter">
       <div class="container">
         <div class="foooter_logo">
@@ -407,7 +408,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer_social_media">
           <p class="foooter_socnets">Social media</p>
           <ul class="soc_nets_ul">
             <li class="soc_nets_item">
@@ -440,7 +441,77 @@
             </li>
           </ul>
         </div>
+        <!--Feadback form dz5 start-->
+        <div class="footer_feedback_container">
+          <form class="form_feedback" name="feedback" autocomplete="off">
+            <label class="form_feedback_label"
+              >Subscribe
+              <input
+                class="form_feedback_input"
+                type="email"
+                name="E-mail"
+                placeholder="E-mail"
+            /></label>
+            <button class="form_feedback_button" type="submit">
+              <span>Subscribe</span>
+              <!-- <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 2L0 13.25L7.66994 15.6172L19.5 6.375L10.5017 16.4913L10.509 16.4936L10.5 16.4913V22L14.8013 17.8183L20.2501 19.5L24 2Z"
+                  fill="white"
+                />
+              </svg> -->
+              <svg class="send_icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-gosend"></use>
+              </svg>
+            </button>
+            <!--Feadback form dz5 end-->
+          </form>
+        </div>
       </div>
     </footer>
+    <!--Modal window form dz5 start-->
+    <div class="modal_overlay">
+      <div class="modal">
+        <p class="modal_title">Leave your contacts and we will call you back</p>
+        <form>
+          <label for="name"
+            >Ім'я:<input type="text" id="name" placeholder="Ваше ім'я" required
+          /></label>
+
+          <label for="email"
+            >Електронна пошта:<input
+              type="email"
+              id="email"
+              placeholder="Ваш email"
+              required
+          /></label>
+
+          <label for="password"
+            >Пароль:<input
+              type="password"
+              id="password"
+              placeholder="Ваш пароль"
+              required
+          /></label>
+
+          <label class="privacy-policy">
+            <input type="checkbox" required /> Я погоджуюсь з
+            <a href="#">політикою конфіденційності</a>
+          </label>
+
+          <button type="submit">Зареєструватися</button>
+        </form>
+        <!-- <form class="form" name="issue_report_form" autocomplete="off">
+          <button class="form-button" type="submit">Submit an issue</button>
+        </form> -->
+      </div>
+    </div>
+    <!--Modal window form dz5 start-->
   </body>
 </html>
