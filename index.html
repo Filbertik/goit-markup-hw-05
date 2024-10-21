@@ -443,9 +443,10 @@
         </div>
         <!--Feadback form dz5 start-->
         <div class="footer_feedback_container">
+          <p class="form_feedback_title">Subscribe</p>
           <form class="form_feedback" name="feedback" autocomplete="off">
-            <label class="form_feedback_label"
-              >Subscribe
+            <label class="form_feedback_label">
+              <!-- Subscribe -->
               <input
                 class="form_feedback_input"
                 type="email"
@@ -453,7 +454,7 @@
                 placeholder="E-mail"
             /></label>
             <button class="form_feedback_button" type="submit">
-              <span>Subscribe</span>
+              Subscribe
               <!-- <svg
                 width="24"
                 height="24"
@@ -478,38 +479,105 @@
     <!--Modal window form dz5 start-->
     <div class="modal_overlay">
       <div class="modal">
+        <button class="modal_close" type="button">
+          <svg class="modal_close_icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <p class="modal_title">Leave your contacts and we will call you back</p>
         <form>
-          <label for="name"
-            >Ім'я:<input type="text" id="name" placeholder="Ваше ім'я" required
-          /></label>
-
-          <label for="email"
-            >Електронна пошта:<input
-              type="email"
-              id="email"
-              placeholder="Ваш email"
+          <div class="modal_name_cont">
+            <label
+              class="modal_name_label"
+              for="user-name"
+              type="text"
+              name="user-name"
+              >Name:</label
+            >
+            <div class="modal_name_input">
+              <input
+                class="modal_input"
+                type="text"
+                id="user-name"
+                required
+              /><svg class="modal_input_icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal_name_cont">
+            <label
+              class="modal_name_label"
+              for="user-name"
+              type="text"
+              name="user-name"
+              >Phone:</label
+            >
+            <div class="modal_name_input">
+              <input
+                class="modal_input"
+                type="text"
+                id="user-name"
+                required
+              /><svg class="modal_input_icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal_name_cont">
+            <label
+              class="modal_name_label"
+              for="user-name"
+              type="text"
+              name="user-name"
+              >Email:</label
+            >
+            <div class="modal_name_input">
+              <input
+                class="modal_input"
+                type="text"
+                id="user-name"
+                required
+              /><svg class="modal_input_icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal_comment_container">
+            <label
+              class="modal_name_label"
+              for="user-comment"
+              type="text"
+              name="user-comment"
+              >Comment:</label
+            >
+            <textarea
+              class="modal_comment_field"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="upp_container">
+            <input
+              class="upp_input visually-hidden"
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
               required
-          /></label>
+            />
+            <label class="privacy_policy" for="user-privacy"
+              >I accept the terms and conditions of the
+              <span class="upp_ch"
+                ><svg class="modal_input_icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-email"></use></svg></span
+            ></label>
+            <a class="upp_a" href="#">Privacy Policy</a>
+          </div>
 
-          <label for="password"
-            >Пароль:<input
-              type="password"
-              id="password"
-              placeholder="Ваш пароль"
-              required
-          /></label>
-
-          <label class="privacy-policy">
-            <input type="checkbox" required /> Я погоджуюсь з
-            <a href="#">політикою конфіденційності</a>
-          </label>
-
-          <button type="submit">Зареєструватися</button>
+          <button class="modal_cta" type="button">Send</button>
         </form>
-        <!-- <form class="form" name="issue_report_form" autocomplete="off">
-          <button class="form-button" type="submit">Submit an issue</button>
-        </form> -->
       </div>
     </div>
     <!--Modal window form dz5 start-->

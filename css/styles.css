@@ -489,10 +489,20 @@ footer {
 
 .footer_social_media {
   margin-right: 80px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.form_feedback_title {
+  margin-bottom: 16px;
+  color: #fff;
 }
 
 .form_feedback {
-  max-width: 453px;
+  /* max-width: 453px; */
   display: flex;
 }
 
@@ -502,39 +512,63 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  gap: 24px;
 }
 .form_feedback_input {
   border: 1px solid #fff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
-  background-color: #2e2f42;
+  background-color: transparent;
+  /* background-color: #2e2f42; */
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-top: 16px;
+  /* margin-top: 16px; */
+  margin-right: 24px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #fff;
 }
+
+.form_feedback_input::placeholder {
+  color: #ffffff;
+  /* color: white; Колір тексту плейсхолдера */
+  /* opacity: 1; Забезпечує повну непрозорість, деякі браузери задають за замовчуванням 0.5 */
+}
+
 .form_feedback_button {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  /* flex-direction: row; */
   gap: 16px;
   border-radius: 4px;
-  padding: 8px 24px;
+  /* padding: 8px 24px; */
   width: 165px;
   height: 40px;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
+  /* background-color: #4d5ae5; */
   cursor: pointer;
-  margin-top: 40px;
+  /* margin-top: 40px; */
+  min-width: 165px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: none;
 }
 
-.form_feedback_button span {
+/* .form_feedback_button span {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-}
+} */
 
 .form_feedback_button i,
 .form_feedback_button svg {
@@ -542,10 +576,7 @@ footer {
 }
 .send_icon {
   fill: #fff;
-}
-.form_feedback_input::placeholder {
-  color: white; /* Колір тексту плейсхолдера */
-  opacity: 1; /* Забезпечує повну непрозорість, деякі браузери задають за замовчуванням 0.5 */
+  margin-left: 16px;
 }
 
 /* Modal window */
@@ -560,6 +591,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* display: none; */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -568,11 +602,18 @@ footer {
   background: #fcfcfc;
   border-radius: 4px;
   width: 408px;
-  height: 584px;
-  display: flex;
+  /* height: 584px; */
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 584px;
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 .modal_title {
   font-weight: 500;
@@ -581,4 +622,150 @@ footer {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 16px;
+}
+.modal_close {
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal_close:hover {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+.modal_close:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+.modal_close_icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal_name_cont {
+  margin-bottom: 8px;
+  position: relative;
+}
+.modal_name_lable {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+.modal_name_input {
+  position: relative;
+}
+.modal_input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal_name_input:hover {
+  border-color: #4d5ae5;
+}
+.modal_input_icon {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal_input_icon:focus {
+  fill: #4d5ae5;
+}
+.modal_comment_container {
+  margin-bottom: 16px;
+}
+.modal_comment_field {
+  padding: 8px 16px;
+  background-color: transparent;
+  outline: transparent;
+  width: 100%;
+  height: 120px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal_comment_field:focus {
+  border-color: #4d5ae5;
+}
+.upp_container {
+  margin-bottom: 24px;
+}
+.upp_input {
+  margin: 0;
+}
+.privacy_policy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.upp_ch {
+  /* line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5; */
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.upp_input:checked .upp_ch {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.upp_a {
+  color: #4d5ae5;
+}
+.modal_cta {
+  cursor: pointer;
+  background-color: #4d5ae5;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: auto;
 }
