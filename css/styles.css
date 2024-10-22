@@ -705,7 +705,7 @@ footer {
   border-color: #4d5ae5;
 }
 
-.modal_input:focus .modal_input_icon {
+.modal_input:focus + .modal_input_icon {
   fill: #4d5ae5;
 }
 /* .modal_input_icon:focus {
