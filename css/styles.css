@@ -719,6 +719,10 @@ footer {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* .modal_input_icon_ch {
+  fill: #f4f4fd;
+} */
+
 .modal_comment_container {
   margin-bottom: 16px;
 }
@@ -771,11 +775,15 @@ footer {
   justify-content: center;
   fill: transparent;
 }
-.upp_input:checked + .upp_ch {
+.upp_input:checked + .privacy_policy > .upp_ch {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
+
+/* .upp_input:checked + .modal_input_icon_ch {
+  fill: #f4f4fd;;
+} */
 
 /* .upp_input:checked .upp_ch {
   background-color: #404bbf;
