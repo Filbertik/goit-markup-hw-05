@@ -771,11 +771,18 @@ footer {
   justify-content: center;
   fill: transparent;
 }
-.upp_input:checked .upp_ch {
+.upp_input:checked + .upp_ch {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
+
+/* .upp_input:checked .upp_ch {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+} */
+
 .upp_a {
   color: #4d5ae5;
   font-weight: 400;
