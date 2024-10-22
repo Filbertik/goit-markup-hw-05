@@ -774,6 +774,7 @@ footer {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 .upp_input:checked + .privacy_policy > .upp_ch {
   background-color: #404bbf;
