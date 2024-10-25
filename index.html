@@ -57,7 +57,10 @@
       <section class="main_page">
         <div class="container">
           <h1 class="hero_title">Effective Solutions for Your Business</h1>
-          <button type="button" class="cta">Order Service</button>
+          <button type="button" class="cta" data-modal-open>
+            <!--add att to button (data-modal-open)-->
+            Order Service
+          </button>
         </div>
       </section>
       <!--2 Advantages-->
@@ -453,7 +456,7 @@
                 name="mail"
                 placeholder="E-mail"
             /></label>
-            <button class="form_feedback_button" type="submit">
+            <button class="form_feedback_button" type="submit" data-modal-open>
               Subscribe
               <!-- <svg
                 width="24"
@@ -477,9 +480,11 @@
       </div>
     </footer>
     <!--Modal window form dz5 start-->
-    <div class="modal_overlay">
+    <!--add att to main div modal window (data-modal)-->
+    <div class="modal_overlay" data-modal>
       <div class="modal">
-        <button class="modal_close" type="button">
+        <button class="modal_close" type="button" data-modal-close>
+          <!--add att to close button (data-modal-close)-->
           <svg class="modal_close_icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -568,6 +573,9 @@
         </form>
       </div>
     </div>
-    <!--Modal window form dz5 start-->
+    <!--Modal window form dz5 end-->
+    <!--Js script form analysis dz5 start-->
+    <script src="./js/modal.js"></script>
+    <!--Js script form analysis dz5 end-->
   </body>
 </html>
